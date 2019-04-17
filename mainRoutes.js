@@ -6,12 +6,8 @@ let mainRouter = express.Router()
 //   res.send('Hello new World')
 // })
 
-// mainRouter.get('/about', function (req, res) {
-//   res.sendFile(path.join(__dirname, 'views', 'about.html'))
-// })
-
-mainRouter.get('/', function (req, res) {
-  res.send('Hello World, I\'m Node.js')
+mainRouter.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname, 'views', 'about.html'))
 })
 
 module.exports = mainRouter
